@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit | Elite Performance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>Power<span>Fit</span></span>
+            </div>
+            
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="inputBusca" placeholder="O que você está procurando hoje?">
+                </div>
+            </div>
+
+            <nav class="actions">
+                <button id="btnOpenModal" class="btn-add">
+                    <i class="fas fa-plus"></i> <span>Novo Produto</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <div class="section-header">
+            <h3><i class="fas fa-boxes-stacked"></i> Catálogo de Produtos</h3>
+            <div class="filter-info">Todos os itens disponíveis</div>
+        </div>
+
+        <div id="lista-produtos" class="grid-produtos">
+            </div>
+    </main>
+
+    <div id="modalProduto" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-cart-plus"></i> Novo Item</h2>
+                <span class="close">&times;</span>
+            </div>
+            
+            <form id="formProduto">
+                <div class="form-group">
+                    <label>Informações Básicas</label>
+                    <input type="text" id="nome" placeholder="Nome do Produto" required>
+                    <input type="text" id="marca" placeholder="Marca (Ex: Growth, Max)" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Aparência e Classificação</label>
+                    <input type="text" id="imagem" placeholder="Link da imagem (URL)" required>
+                    <input type="text" id="categoria" placeholder="Categoria (Ex: Pré-Treino)" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Valores</label>
+                    <div class="input-with-icon">
+                        <span class="currency-label">R$</span>
+                        <input type="number" id="preco" step="0.01" placeholder="0,00" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-save">
+                    <i class="fas fa-check"></i> Cadastrar Produto
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PowerFit - Vestindo sua força.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
