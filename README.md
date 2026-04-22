@@ -8,7 +8,7 @@ O site do mundo mais desejado do momento - Sua melhor versão começa aqui
 - Design responsivo e moderno.
 
 # Print do Site 
-![Tela do site](telaSite.png)
+![Tela do site](TelaSite.png)
 
 ## Como rodar
 
