@@ -7,6 +7,9 @@ O site do mundo mais desejado do momento - Sua melhor versão começa aqui
 - Visualização detalhada de cada item (clique no card).
 - Design responsivo e moderno.
 
+# Print do Site 
+![Tela do site](telaSite.png)
+
 ## Como rodar
 
 ### 1. Banco de Dados
